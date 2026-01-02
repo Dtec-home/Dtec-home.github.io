@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Muiruri Kamau | Software Engineer & Data Analyst</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+            --bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg);
+            padding: 4rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--dark);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 0;
+            background: var(--bg);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin: 0 2rem 2rem 2rem;
+            color: var(--dark);
+        }
+
+        .content {
+            padding: 0 2rem;
+        }
+
+        /* Experience & Projects Cards */
+        .job, .project {
+            margin-bottom: 2rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+
+        .company {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .date, .location {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Skills Tags */
+        .skills-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+            header {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>David Muiruri Kamau</h1>
+            <div class="subtitle">Software Engineer & Data Analyst</div>
+            <div class="contact-info">
+                <a href="mailto:dkamau.muiruri@gmail.com">dkamau.muiruri@gmail.com</a>
+                <a href="#">(+254) 797 030 300</a>
+                <a href="#">Nairobi, Kenya</a>
+                <br><br>
+                <a href="#">LinkedIn</a> | 
+                <a href="#">GitHub</a> | 
+                <a href="#">Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <div class="content">
+                <p>Software Engineer and Data Analyst with 4+ years of experience building secure financial systems, implementing compliance controls, and developing data analytics solutions for payment services and enterprise platforms. Proven expertise in transaction monitoring, risk assessment automation, and regulatory compliance through technical implementation. Experienced in Python data analytics, API development, and building monitoring systems for financial operations. Strong background in secure authentication systems, audit trails, and financial data integrity with hands-on experience in M-PESA integrations and digital payment platforms.</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="content">
+                <div class="skills-category">
+                    <span class="skill-title">Programming Languages</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript (ES6+)</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Java</span>
+                </div>
+                <div class="skills-category">
+                    <span class="skill-title">Backend & Cloud</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">AWS/Azure/GCP</span>
+                    <span class="skill-tag">CI/CD</span>
+                </div>
+                <div class="skills-category">
+                    <span class="skill-title">Data & Databases</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">Pandas/NumPy</span>
+                    <span class="skill-tag">TensorFlow</span>
+                </div>
+                <div class="skills-category">
+                    <span class="skill-title">Financial Systems & Security</span>
+                    <span class="skill-tag">OAuth2</span>
+                    <span class="skill-tag">M-PESA Integration</span>
+                    <span class="skill-tag">Transaction Monitoring</span>
+                    <span class="skill-tag">Audit Logging</span>
+                    <span class="skill-tag">RBAC</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="content">
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Software Developer</span> | <span class="company">Coseke Limited</span>
+                        </div>
+                        <div class="date">May 2023 – Present</div>
+                    </div>
+                    <ul>
+                        <li>Integrated OAuth2 authentication via eCitizen and Maisha Digital ID for secure identity verification and token management in government systems.</li>
+                        <li>Developed automated compliance monitoring systems with strict audit trails for Meetings, Approvals, and E-signatures modules serving Kenya Cabinet and KMTC.</li>
+                        <li>Built backend APIs with FastAPI and Node.js supporting real-time transaction monitoring and data operations for high-profile government clients.</li>
+                        <li>Implemented PostgreSQL multitenancy architecture with role-based access controls ensuring data segregation and security compliance.</li>
+                        <li>Automated tenant onboarding and verification processes, reducing manual review time from 5 days to instant while maintaining security standards.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Co-Founder & Tech Lead</span> | <span class="company">Almond Allons-y Suite</span>
+                        </div>
+                        <div class="date">Jan 2022 – Present</div>
+                    </div>
+                    <ul>
+                        <li>Led development of Small Group Savings Management System with transaction monitoring, member verification, and financial reporting capabilities.</li>
+                        <li>Leveraged Mifos Fineract open-source core banking platform to deliver compliant financial services with built-in AML controls.</li>
+                        <li>Architected secure data pipelines ensuring financial data integrity, auditability, and transactional consistency across distributed systems.</li>
+                        <li>Built Dockerized microservices with centralized logging and monitoring for production reliability and incident response.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">ICT Support Officer</span> | <span class="company">Tenri Group of Hospitals</span>
+                        </div>
+                        <div class="date">Feb 2022 – Jul 2022</div>
+                    </div>
+                    <ul>
+                        <li>Optimized network infrastructure achieving 99.9% uptime for critical healthcare systems handling patient financial transactions.</li>
+                        <li>Trained 50+ staff on Hospital Management System, reducing data entry errors and improving operational compliance.</li>
+                        <li>Implemented CCTV monitoring and access control systems, enhancing physical security compliance by 20%.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Relevant Projects</h2>
+            <div class="content">
+                <div class="project">
+                    <div class="job-header">
+                        <span class="job-title">TradeBuddy – Trading Platform</span>
+                        <span class="location">FastAPI, PostgreSQL, WebSockets</span>
+                    </div>
+                    <ul>
+                        <li>Built REST and WebSocket APIs in FastAPI for secure trading bot orchestration with real-time transaction tracking.</li>
+                        <li>Integrated external financial APIs (Binance, Coinbase) with OAuth2 authentication and secure token management.</li>
+                        <li>Implemented automated monitoring for unusual trading patterns and transaction anomalies.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="job-header">
+                        <span class="job-title">Allons-y Save – Financial Group System</span>
+                        <span class="location">Next.js, Django GraphQL</span>
+                    </div>
+                    <ul>
+                        <li>Developed multi-tenant savings platform supporting member verification, contribution tracking, loan processing, and financial reporting.</li>
+                        <li>Implemented transaction monitoring system flagging suspicious patterns in group financial activities.</li>
+                        <li>Built comprehensive audit logging capturing all financial transactions for compliance reviews.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="job-header">
+                        <span class="job-title">MySizzle Date – Payment Platform</span>
+                        <span class="location">Django, Celery, M-PESA</span>
+                    </div>
+                    <ul>
+                        <li>Developed payment processing system supporting VISA and M-PESA integration with transaction verification.</li>
+                        <li>Implemented asynchronous task processing with Celery for reliable payment handling and reconciliation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education & Certifications</h2>
+            <div class="content">
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">M.Sc. Information Technology</span>
+                        <span class="date">Aug 2025 – Present</span>
+                    </div>
+                    <div class="company">University of Embu, Kenya</div>
+                </div>
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">B.Sc. Information Technology</span>
+                        <span class="date">2019 – 2023</span>
+                    </div>
+                    <div class="company">University of Embu, Kenya</div>
+                </div>
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Certified Chief Information Officer (Diploma)</span>
+                        <span class="date">2023</span>
+                    </div>
+                    <div class="company">MTF Portugal (Remote)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements -->
+        <section>
+            <h2>Key Achievements</h2>
+            <div class="content">
+                <ul>
+                    <li>Successfully deployed secure multi-tenant systems with compliance monitoring for government and financial institutions.</li>
+                    <li>Automated verification and onboarding processes while maintaining strict security and audit requirements.</li>
+                    <li>Reduced operational costs by 30-40% through cloud infrastructure optimization and process automation.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 David Muiruri Kamau. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
